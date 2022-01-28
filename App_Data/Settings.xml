@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<HWSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DefaultPageText1>WELCOME</DefaultPageText1>
+  <HeaderText>HEADER</HeaderText>
+  <DefaultPageText2>KTS INFOTECH</DefaultPageText2>
+  <FooterText>FOOTER</FooterText>
+</HWSettings>
