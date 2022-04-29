@@ -14,8 +14,7 @@ namespace Helloworld
             try
             {
                 HWSettings Settings = (HWSettings)Application["Settings"];
-                LHeader.Text = Settings.HeaderText;
-                
+                LHeader.Text = Settings.HeaderText;                
                 LFooter.Text = Settings.FooterText;
                 LabelCounter.Text = "you are visitor no" + Application["Counter"].ToString();
                 HWSettings settings = (HWSettings)Application["Settings"];
