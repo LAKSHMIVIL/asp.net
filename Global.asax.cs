@@ -34,10 +34,7 @@ namespace Helloworld
             int iCounter = Convert.ToInt32(Application["Counter"]);
                 iCounter++;
 
-
-
             Application["Counter"] = iCounter.ToString();
-
             
             
         }
