@@ -25,7 +25,6 @@ namespace Helloworld
             {
             }
 
-
         }
 
         protected void ButtonLogOut_Click(object sender, EventArgs e)
@@ -33,4 +32,5 @@ namespace Helloworld
             Session.Remove("UserID");
             Response.Redirect("Default.aspx");
         }
-    } }
+    }
+ }

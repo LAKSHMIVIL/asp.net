@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -41,60 +40,42 @@
          <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container" >
                 <div class="navbar-header" >
-                     <ul class="nav navbar-nav"  >
-                    
+                     <ul class="nav navbar-nav"  >                    
                         <li><a runat="server" href="~/">Home</a></li>
-                   </ul>
-                        </div>
-               
+                     </ul>
+                 </div>               
                 <Header class="bg-light text-center text-lg-start">
                <div class="text justify ">
-
-                 <asp:Label ID="LHeader" runat="server" Text="HeaderText" ForeColor="#FF6699"></asp:Label>
-                    </div>
-                    </Header>  
-               
+                <asp:Label ID="LHeader" runat="server" Text="HeaderText" ForeColor="#FF6699"></asp:Label>
+                </div>
+                </Header>                
                     <ul class="nav navbar-nav navbar-right">
-                           <li>
-                               <asp:Button ID="ButttonLogin" runat="server" Text="Login"  ForeColor="Red" PostBackUrl="~/HWLogin.aspx" /></li>
+                       <li><asp:Button ID="ButttonLogin" runat="server" Text="Login"  ForeColor="Red" PostBackUrl="~/HWLogin.aspx" /></li>
                        <li ><asp:Button ID="ButtonLogOut" runat="server" Text="LogOut" ForeColor="#006600" OnClick="ButtonLogOut_Click"  /></li>
                    </ul>
-
-                  </div>
-            </nav>
-         
+                 </div>
+            </nav>         
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
-
             </asp:ContentPlaceHolder>
              
-            
-
-        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+         <nav class="navbar navbar-inverse navbar-fixed-bottom">
             <div class="container" >
-                <div class="navbar-footer" >
-                     <ul class="nav navbar-nav"  >
-                    
-                         
-                        </ul>
-                        </div>
-              
-                
-                   
-         <footer class="bg-light text-center text-lg-start">
+                <div class="navbar-footer">
+                     <ul class="nav navbar-nav">                         
+                     </ul>
+                 </div>                              
+                  
+        <footer class="bg-light text-center text-lg-start">
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-
-    <a class="text-dark">
-            
+       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+       <a class="text-dark">            
                 <p>&copy; <%: DateTime.Now.Year %> </p>
                 <asp:Label ID="LabelCounter" runat="server" Text="Counter"></asp:Label>
                   <a class="text-dark"> <asp:Label ID="LFooter" runat="server" Text="Footertext" ForeColor="#FF6699"></asp:Label>
-</a>               
-               </a>
-
-            </footer>
+                  </a>               
+       </a>
+           </footer>
         </div>
-
     </form>
 </body>
 </html>
